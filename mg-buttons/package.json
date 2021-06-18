@@ -1,6 +1,6 @@
 {
-  "name": "mg-buttons",
-  "version": "1.0.0",
+  "name": "mg-react-buttons",
+  "version": "1.0.1",
   "description": "A react button component",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,8 @@
   },
   "keywords": [
     "mg-buttons",
+    "mg-react-buttons",
+    "mg react buttons",
     "react mg-buttons",
     "mg buttons",
     "mgbuttons"

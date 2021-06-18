@@ -1,14 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
+import SlideableButton from "mg-react-buttons/mg/SlideableButton";
 
 function App() {
+  const theme = {
+    width: "300px",
+    height: "50px",
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <SlideableButton
+          theme={theme}
+          textColor="#000"
+          bgSecondaryColor="khaki"
+          bgPrimaryColor="#fff"
+        >
+          Hello! React
+        </SlideableButton>
       </header>
     </div>
   );

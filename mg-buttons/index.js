@@ -1,2 +1,2 @@
-import SlideableButton from "./components/mg/SlideableButton";
+import SlideableButton from "./mg/SlideableButton";
 export default SlideableButton;
