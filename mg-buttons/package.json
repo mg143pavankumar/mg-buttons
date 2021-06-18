@@ -16,7 +16,7 @@
   ],
   "author": "Mistry Pavan Kumar",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "styled-components": "^5.3.0"
   }
 }
