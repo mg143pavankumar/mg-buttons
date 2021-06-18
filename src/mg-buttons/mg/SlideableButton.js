@@ -16,10 +16,10 @@ const SlideableButton = styled.button`
   min-width: ${(props) => props.theme.minWidth || "140px"};
   width: ${(props) => props.theme.width};
   height: ${(props) => props.theme.height};
-
   position: relative;
   z-index: 1;
   font-weight: ${(props) => props.theme.fontWeight};
+  transition: color 500ms ease-in-out;
 
   ::before {
     content: "";
@@ -58,6 +58,10 @@ const SlideableButton = styled.button`
   :hover:after {
     width: 0%;
     opacity: 0;
+  }
+
+  :hover {
+    color: ${(props) => props.theme.hoverTextColor || "#fff"};
   }
 `;
 
