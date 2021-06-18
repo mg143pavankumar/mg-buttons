@@ -7,7 +7,7 @@ function App() {
     width: "300px",
     height: "50px",
     textColor: "#000",
-    bgSecondaryColor: "khaki",
+    bgSecondaryColor: "blue",
     bgPrimaryColor: "#fff",
   };
   return (
