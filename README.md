@@ -53,7 +53,26 @@ To use this component in you project, follow the following instructions:
 # Usage
 [(Back to top)](#table-of-contents)
 
-App.js
+## Themes which can be changed
+```
+const theme = {
+    bgPrimaryColor: "",
+    bgSecondaryColor: "",
+    textColor: "",
+    hoverTextColor: "" ,
+    fontWeight: "",
+    fontSize: "",
+    width: "",
+    height: "",
+    minWidth: ""
+
+  }
+
+
+```
+
+
+Example useage (App.js)
 
 ```
 import React from "react";
@@ -68,8 +87,9 @@ export default function App() {
   const theme = {
     bgPrimaryColor: "#3982f7",
     bgSecondaryColor: "#0062ff",
-    ... ... ... 
-    ... ... ... 
+    ... ... .... 
+    .... ... ... .. 
+    ... .... ... ..
   }
 
   return (
