@@ -1,70 +1,122 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- Add banner here -->
 
-In the project directory, you can run:
 
-### `npm start`
+# mg-react-buttons
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- Add buttons here -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/mg143pavankumar/mg-react-buttons?include_prereleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/mg143pavankumar/mg-react-buttons)
+![GitHub issues](https://img.shields.io/github/issues-raw/mg143pavankumar/mg-react-buttons)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/mg143pavankumar/mg-react-buttons)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Describe your project in brief -->
 
-### `npm run build`
+`mg-react-buttons` is created using styled-components which is fully customizable and user friendly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Demo-Preview
+<!-- Add a demo for your project -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Here is the demo of ```slideable button```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Table of contents
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here is the TOC this project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Demo-Preview](#demo-preview)
+- [Table of contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Contribute](#contribute)
+    - [Sponsor](#sponsor)
+    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
+- [License](#license)
+- [Footer](#footer)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Installation
+[(Back to top)](#table-of-contents)
 
-## Learn More
+To use this component in you project, follow the following instructions:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. create a react project
+2. install mg-react-buttons  ``` npm i mg-react-buttons ```
+3. import mg-react-buttons where you required in your project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Usage
+[(Back to top)](#table-of-contents)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+App.js
 
-### Analyzing the Bundle Size
+```
+import React from "react";
+// + include below code
+import SlideableButton from 'mg-react-buttons/mg/SlidableButton'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+// App Component
+export default function App() {
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ // + include below code to overide the properites  
+  const theme = {
+    bgPrimaryColor: "#3982f7",
+    bgSecondaryColor: "#0062ff",
+    ... ... ... 
+    ... ... ... 
+  }
 
-### Advanced Configuration
+  return (
+    <>
+      <div style = {{
+      display:"flex", 
+      justify-content: "center", 
+      align-items: "center", 
+      height: "100vh"
+      }}>
+      
+        // + include this component to use SlideableButton
+        <SlideableButton theme = {theme}>Hello world</SlideableButton>
+      <div>
+    </>
+  );
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
 
-### Deployment
+# Development
+[(Back to top)](#table-of-contents)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+# Contribute
+[(Back to top)](#table-of-contents)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please check Contribute.md to know how you can contribute to this project.
+
+### Sponsor
+[(Back to top)](#table-of-contents)
+
+If you want to sponsor the project, do reach me out at pavansharma.mg143@gmail.com or click on the sponsor badge.
+
+### Adding new features or fixing bugs
+[(Back to top)](#table-of-contents)
+
+If you find an issue in the project, open a new issue or a raise a pull request in this repository. 
+
+You can also mail to pavansharma.mg143@gmail.com incase of any major issues.
+
+# License
+[(Back to top)](#table-of-contents)
+
+Check out the LICENSE file in the repo.
+
+[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+
+
+
